@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function help() {
-    echo "Usage: $BASH "$0" <file-to-split>" "<output-dir>"
+    echo "Usage: $BASH \"$0\" <file-to-split>"
     echo "Split a file into multiple parts, each part at most 49 MB (slightly less than GitHub's recommended maximum file size of 50 MB)."
     echo "The split files will be put in the same output directory as the input file."
 }
