@@ -20,6 +20,8 @@ function split_file() {
     local PREFIX="$(basename "$FILE_TO_SPLIT").part"
 
     split -d -b "$PART_SIZE" "$FILE_TO_SPLIT" "$PREFIX"
+    return $?
 }
 
 split_file $@
+exit $?
