@@ -23,5 +23,5 @@ function split_file() {
     return $?
 }
 
-split_file $@
+split_file "$@"
 exit $?
